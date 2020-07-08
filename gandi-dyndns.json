@@ -1,0 +1,12 @@
+{
+  "APIKey": "<Gandi API key>",
+  "domain": "yourdomain.com",
+  "lastIP": "0.0.0.0",
+  "records": [
+    {
+      "rrset_name": "@",
+      "rrset_type": "A",
+      "rrset_ttl": 300
+    }
+  ]
+}
