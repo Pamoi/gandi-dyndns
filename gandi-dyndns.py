@@ -33,9 +33,10 @@ def update_config_last_ip(address):
 
 
 def get_public_ip():
-    r = requests.get('https://ip4.seeip.org', timeout=requestTimeout)
+    r = requests.get('https://api.ipify.org?format=json', timeout=requestTimeout)
     r.raise_for_status()
-    return r.text
+    data = r.json()
+    return data['ip']
 
 
 def update_records_address(records, address):
